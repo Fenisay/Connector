@@ -21,11 +21,10 @@ rootProject.name = "connector"
 // this is needed to have access to snapshot builds of plugins
 pluginManagement {
     repositories {
-        mavenLocal()
+        jcenter()
         maven {
-            url = uri("https://repo.jenkins-ci.org/public")
+            url 'https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central'
         }
-        mavenCentral()
         gradlePluginPortal()
     }
 }
@@ -33,8 +32,9 @@ pluginManagement {
 dependencyResolutionManagement {
     repositories {
         mavenLocal()
+        jcenter()
         maven {
-            url = uri("https://repo.jenkins-ci.org/public")
+            url 'https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central'
         }
         mavenCentral()
     }

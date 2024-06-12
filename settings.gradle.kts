@@ -21,7 +21,6 @@ rootProject.name = "connector"
 // this is needed to have access to snapshot builds of plugins
 pluginManagement {
     repositories {
-        jcenter()
         maven {
             url = uri("https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central")
         }
@@ -32,7 +31,6 @@ pluginManagement {
 dependencyResolutionManagement {
     repositories {
         mavenLocal()
-        jcenter()
         maven {
             url = uri("https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central")
         }

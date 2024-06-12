@@ -23,7 +23,7 @@ pluginManagement {
     repositories {
         jcenter()
         maven {
-            url 'https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central'
+            url = uri("https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central")
         }
         gradlePluginPortal()
     }
@@ -34,7 +34,7 @@ dependencyResolutionManagement {
         mavenLocal()
         jcenter()
         maven {
-            url 'https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central'
+            url = uri("https://repository.adp.amadeus.net:443/artifactory/proxy-mvn-central")
         }
         mavenCentral()
     }
